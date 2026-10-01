@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Những đoạn thân mật / thả thính — Mihari & Izoha</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #10121a;
+      --panel: #191c27;
+      --panel-2: #202434;
+      --text: #edf0fa;
+      --muted: #a8afc2;
+      --line: #30364a;
+      --pink: #ff9cc8;
+      --blue: #9dc8ff;
+      --gold: #ffd98c;
+      --green: #a9e5c0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at top, #29233b 0, var(--bg) 48rem);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { width: min(920px, calc(100% - 28px)); margin: 32px auto 60px; }
+    h1 { line-height: 1.2; font-size: clamp(1.65rem, 4vw, 2.55rem); margin: 0 0 10px; }
+    h2 { font-size: 1.18rem; margin: 0; }
+    p { margin: 8px 0; }
+    .intro, .summary, .thread {
+      background: color-mix(in srgb, var(--panel) 94%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .intro { padding: 24px; }
+    .intro p, .muted { color: var(--muted); }
+    .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .stat, .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      padding: 4px 10px;
+      font-size: .82rem;
+    }
+    .summary { margin: 16px 0; padding: 18px 22px; }
+    .summary h2 { margin-bottom: 8px; }
+    .summary ul { margin: 8px 0 0; padding-left: 22px; }
+    .filters { display: grid; gap: 12px; margin: 18px 0; }
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--text);
+      font: inherit;
+    }
+    .buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 13px;
+      background: var(--panel);
+      color: var(--text);
+      font: inherit;
+      cursor: pointer;
+    }
+    button[aria-pressed="true"] { border-color: var(--pink); color: var(--pink); }
+    .thread { padding: 18px; margin: 12px 0; }
+    .thread-head { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+    .thread-head h2 { flex: 1; }
+    .tag.flirt { color: var(--pink); }
+    .tag.affection { color: var(--green); }
+    .tag.ambiguous { color: var(--gold); }
+    .tag.context { color: var(--blue); }
+    .explanation { color: var(--muted); font-size: .94rem; margin: 8px 0 14px; }
+    .messages { display: grid; gap: 8px; }
+    .msg { background: var(--panel-2); border-radius: 10px; padding: 10px 13px; }
+    .msg .meta { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: .8rem; margin-bottom: 3px; }
+    .msg.mihari { border-left: 3px solid var(--pink); }
+    .msg.izoha { border-left: 3px solid var(--blue); }
+    .quote { white-space: pre-wrap; overflow-wrap: anywhere; }
+    .foot { color: var(--muted); font-size: .86rem; margin-top: 24px; }
+    .empty { display: none; color: var(--muted); padding: 18px; text-align: center; }
+    .full-chat a { display: inline-block; margin-top: 8px; border: 1px solid var(--pink); border-radius: 999px; padding: 9px 15px; color: var(--pink); text-decoration: none; }
+    @media (max-width: 560px) {
+      main { width: min(100% - 18px, 920px); margin-top: 12px; }
+      .intro, .summary, .thread { padding: 15px; }
+      .thread-head { display: block; }
+      .thread-head .tag { display: inline-block; margin-top: 7px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header class="intro">
+    <h1>Những đoạn thân mật / thả thính</h1>
+    <p><strong>𝐌𝐢𝐡𝐚𝐫𝐢_✩ ↔ Izoha_dora🦊</strong> · Trích từ log chat của hai người trong kênh chung.</p>
+    <p>Đây là các đoạn đáng chú ý khi đọc theo hướng thân mật, trêu ghẹo hoặc nhập vai. Chúng không đủ để xác nhận tình cảm ngoài đời; mỗi đoạn giữ lại mốc thời gian và một ít lời qua lại để tránh tách câu khỏi ngữ cảnh.</p>
+    <div class="stats">
+      <span class="stat">2.588 tin nhắn của hai người trong bản lọc</span>
+      <span class="stat">406 tin nhắn trả lời trực tiếp lẫn nhau</span>
+      <span class="stat">Trích đoạn được chọn thủ công theo ngữ cảnh</span>
+    </div>
+  </header>
+
+  <section class="summary">
+    <h2>Đọc nhanh nội dung chung</h2>
+    <ul>
+      <li>Phần lớn là nói chuyện fandom: anime/nhân vật, tranh, cặp đôi, nội dung sáng tác và đùa theo sở thích chung.</li>
+      <li>Hai người tương tác khá thường xuyên, hay trêu nhau, hỏi han/đáp lại và dùng cách gọi thân mật.</li>
+      <li>Có một số câu nghe như thả thính hoặc ghen/dỗi, nhưng thường ở dạng đùa trong kênh chung/roleplay chứ không phải lời tỏ tình nghiêm túc.</li>
+      <li>Izoha có nói mình đang có người yêu. Log này không chứng minh hai người là một cặp hay xác nhận Mihari có tình cảm lãng mạn.</li>
+    </ul>
+  </section>
+
+  <div class="filters">
+    <input id="search" type="search" placeholder="Tìm trong trích đoạn..." aria-label="Tìm trong trích đoạn">
+    <div class="buttons" aria-label="Lọc theo nhóm">
+      <button type="button" data-filter="all" aria-pressed="true">Tất cả</button>
+      <button type="button" data-filter="flirt" aria-pressed="false">Thả thính / đùa tình cảm</button>
+      <button type="button" data-filter="affection" aria-pressed="false">Thân mật / quan tâm</button>
+      <button type="button" data-filter="ambiguous" aria-pressed="false">Mơ hồ / dễ hiểu nhầm</button>
+    </div>
+  </div>
+
+  <section class="thread" data-category="flirt">
+    <div class="thread-head"><h2>“Muốn ngàn lời yêu thương không?”</h2><span class="tag flirt">Thả thính / đùa tình cảm</span></div>
+    <p class="explanation">Mihari xin lỗi rồi chuyển sang câu đùa có chữ “yêu thương”; Izoha phản ứng bằng sticker ngạc nhiên. Nghe như trêu ghẹo, nhưng không có lời đáp nhận tình cảm hay xác nhận nghiêm túc.</p>
+    <div class="messages">
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-07-13 18:56:49</time></div><div class="quote">Z cho xin lỗi bé nha</div></div>
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-07-13 18:58:15</time><span>trả lời “K sợ”</span></div><div class="quote">Ko sợ à z muốn ngàn lời yêu thương ko</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-13 18:58:24</time><span>trả lời câu trên</span></div><div class="quote">:kagu_shock:</div></div>
+    </div>
+  </section>
+
+  <section class="thread" data-category="ambiguous">
+    <div class="thread-head"><h2>Hỏi người yêu và câu “dính vô mấy đứa có ny”</h2><span class="tag ambiguous">Có thể là gợi ý, nhưng mơ hồ</span></div>
+    <p class="explanation">Mihari hỏi Izoha có người yêu chưa rồi nói “dính vô mấy đứa có ny cực vl”. Izoha trả lời mình cũng có người yêu và hỏi đùa Mihari có đang kiếm bồ không. Đây là đoạn dễ được đọc như ghen/thăm dò, nhưng chính Izoha cũng nói đang có người yêu; không thể suy ra hai người đang hẹn hò.</p>
+    <div class="messages">
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-07-13 23:45:40</time></div><div class="quote">Có ny chd</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-13 23:45:52</time></div><div class="quote">Hỏi chi z??</div></div>
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-07-13 23:46:30</time></div><div class="quote">Dính vô mấy đứa có Ny cực vl</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-13 23:53:07</time></div><div class="quote">Th thì k nói đc k..</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-13 23:54:31</time></div><div class="quote">Tui cũng có ny</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-13 23:55:01</time><span>trả lời “Như nào cx đc”</span></div><div class="quote">Ông đinh hỏi để kiếm bồ à=)</div></div>
+    </div>
+  </section>
+
+  <section class="thread" data-category="affection">
+    <div class="thread-head"><h2>“Dỗi r hả cưng?” rồi “thương nín”</h2><span class="tag affection">Thân mật / dỗ dành</span></div>
+    <p class="explanation">Cách gọi “cưng” và lời dỗ dành thể hiện sự thoải mái, thân thiết. Tuy nhiên, chúng vẫn có thể là cách nói đùa giữa bạn bè thân.</p>
+    <div class="messages">
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-07-16 20:43:06</time><span>trả lời “K nói nx”</span></div><div class="quote">Dỗi r hả cưng</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-16 20:43:12</time><span>trả lời câu trên</span></div><div class="quote">Im đi</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-16 20:58:27</time><span>trả lời lời xin lỗi của Mihari</span></div><div class="quote">Thương nín :iro_hump:</div></div>
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-07-16 20:58:36</time><span>trả lời câu trên</span></div><div class="quote">Hẻ</div></div>
+    </div>
+  </section>
+
+  <section class="thread" data-category="affection">
+    <div class="thread-head"><h2>Nhập vai “ôm Mihari ngủ”</h2><span class="tag affection">Thân mật / roleplay</span></div>
+    <p class="explanation">Izoha dùng lệnh AFK ôm Mihari ngủ vào hai thời điểm gần nhau. Đây là hành động thân mật trong chat, nhưng hình thức lệnh/roleplay khiến nó không phải bằng chứng chắc chắn về tình cảm thật.</p>
+    <div class="messages">
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-16 23:58:56</time></div><div class="quote">.afk ôm @𝐌𝐢𝐡𝐚𝐫𝐢_✩ ngủ</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-17 15:25:11</time></div><div class="quote">.afk ôm @𝐌𝐢𝐡𝐚𝐫𝐢_✩ ngủ ôm xíu</div></div>
+    </div>
+  </section>
+
+  <section class="thread" data-category="ambiguous">
+    <div class="thread-head"><h2>“Mihari ghen hở?”</h2><span class="tag ambiguous">Trêu ghen</span></div>
+    <p class="explanation">Izoha hỏi thẳng Mihari có ghen không rồi nói “Lỡ chọc r còn ghen nx=))”. Mihari không xác nhận, chỉ đáp bằng sticker. Vì thế có thể thấy Izoha đang trêu hoặc thử phản ứng, chứ không thể kết luận Mihari thực sự ghen.</p>
+    <div class="messages">
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-18 23:09:20</time><span>trả lời sticker của Mihari</span></div><div class="quote">Mihari ghen hở?</div></div>
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-07-18 23:13:48</time><span>trả lời câu trên</span></div><div class="quote">:iro_kho_noi:</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-07-18 23:15:35</time></div><div class="quote">Lỡ chọc r còn ghen nx=))</div></div>
+    </div>
+  </section>
+
+  <section class="thread" data-category="flirt">
+    <div class="thread-head"><h2>“2 câu làm ny nhau đi”</h2><span class="tag flirt">Đùa ghép đôi / roleplay</span></div>
+    <p class="explanation">Mihari nói câu này giữa màn trêu đùa với vài thành viên khác trong kênh, không phải một lời tỏ tình riêng tư. Có thể tính là đùa ghép đôi hoặc gợi ý nhập vai người yêu, nhưng không có đủ phần hồi đáp để biết Izoha đón nhận thế nào.</p>
+    <div class="messages">
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-08-15 22:16:26</time></div><div class="quote">R mắt gì 1 câu là mihari</div></div>
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-08-15 22:16:29</time></div><div class="quote">2 câu làm ny nhau đi</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-08-15 22:16:33</time></div><div class="quote">[Không có nội dung chữ được xuất trong tin nhắn]</div></div>
+    </div>
+  </section>
+
+  <section class="thread" data-category="ambiguous">
+    <div class="thread-head"><h2>Tiếp tục trêu “ghen / dỗi”</h2><span class="tag ambiguous">Mơ hồ</span></div>
+    <p class="explanation">Đoạn tháng 9 lặp lại mô-típ ghen/dỗi, nhưng phản hồi vẫn ngắn và bông đùa. Mihari nói “Nghĩ như nào cũng được” chứ không nhận mình ghen; “Thì..” cũng chưa phải xác nhận tình cảm.</p>
+    <div class="messages">
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-09-09 11:19:18</time></div><div class="quote">@𝐌𝐢𝐡𝐚𝐫𝐢_✩ mihari ghen pk</div></div>
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-09-09 11:54:48</time><span>trả lời câu trên</span></div><div class="quote">Nghĩ như nào cx đc</div></div>
+      <div class="msg izoha"><div class="meta"><span>Izoha_dora🦊</span><time>2026-09-09 17:09:05</time></div><div class="quote">Dỗi cho coi</div></div>
+      <div class="msg mihari"><div class="meta"><span>𝐌𝐢𝐡𝐚𝐫𝐢_✩</span><time>2026-09-09 17:12:44</time><span>trả lời câu trên</span></div><div class="quote">Thì..</div></div>
+    </div>
+  </section>
+
+  <section class="summary">
+    <h2>Kết luận thận trọng</h2>
+    <p>Có dấu hiệu <strong>thân thiết và trêu ghẹo mang màu sắc tình cảm</strong>: gọi “cưng/bé”, dỗ dành, nhập vai ôm ngủ, hỏi ghen và câu đùa “làm ny nhau”. Mức bằng chứng cho <strong>tình cảm lãng mạn thật sự: chưa đủ</strong>. Cách hiểu an toàn nhất từ log này là hai người khá thân, hợp kiểu đùa/flirt và có thể ghép đôi/roleplay; không thể khẳng định họ yêu nhau.</p>
+    <p class="muted">Không tính câu “Người yêu toi dễ thương~” ngày 15/09 làm bằng chứng: phần trò chuyện gần đó đang nói về nhân vật Iroha/Tako, nên đối tượng của câu này không rõ và có thể không phải Izoha.</p>
+  </section>
+
+  <section class="summary full-chat">
+    <h2>Toàn bộ hội thoại của hai người</h2>
+    <p>Phần trên là các đoạn được chọn vì có sắc thái thân mật hoặc dễ bị hiểu là thả thính. Bản nhẹ bên dưới có toàn bộ 2.588 tin nhắn theo thứ tự thời gian; ảnh được thay bằng tên/ghi chú đính kèm để file nhỏ, dễ gửi và mở nhanh hơn.</p>
+    <a href="chat_day_du_mihari_izoha.html">Mở toàn bộ hội thoại (bản nhẹ)</a>
+  </section>
+
+  <p class="foot">Bản trích này chỉ gồm văn bản cần thiết để đọc mạch hội thoại; emoji/sticker được giữ dưới dạng tên hoặc ghi chú. Mốc thời gian và câu chữ lấy từ bản chat đã lọc theo hai người gửi.</p>
+  <p id="empty" class="empty">Không có đoạn nào khớp với bộ lọc hoặc cụm tìm kiếm.</p>
+</main>
+<script>
+  const search = document.querySelector("#search");
+  const buttons = [...document.querySelectorAll("[data-filter]")];
+  const threads = [...document.querySelectorAll(".thread")];
+  const empty = document.querySelector("#empty");
+  let category = "all";
+  function update() {
+    const query = search.value.trim().toLocaleLowerCase("vi");
+    let visible = 0;
+    for (const thread of threads) {
+      const categoryMatch = category === "all" || thread.dataset.category === category;
+      const textMatch = !query || thread.innerText.toLocaleLowerCase("vi").includes(query);
+      thread.hidden = !(categoryMatch && textMatch);
+      if (!thread.hidden) visible++;
+    }
+    empty.style.display = visible ? "none" : "block";
+  }
+  buttons.forEach(button => button.addEventListener("click", () => {
+    category = button.dataset.filter;
+    buttons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+    update();
+  }));
+  search.addEventListener("input", update);
+</script>
+</body>
+</html>
